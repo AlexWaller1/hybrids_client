@@ -4,6 +4,9 @@
 // component state is local and isolated to the respective component
 
 import React, { Component } from 'react';
+import { connect } from 'react-redux'
+
+import { addHybrid } from '../actions/hybridsActions'
 
 class HybridsForm extends Component {
 
@@ -21,6 +24,11 @@ class HybridsForm extends Component {
        this.setState({
            [name]: value
        })
+   }
+
+   handleSubmit = e => {
+       e.preventDefault()
+       this.props.addHybrid(state)
    }
 
     render() {
@@ -47,4 +55,4 @@ class HybridsForm extends Component {
     }
 }
 
-export default HybridsForm;
+export default connect(null, { addHybrid })(HybridsForm);
