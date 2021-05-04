@@ -1,10 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux'
 
-const HybridsList = () => {
+const HybridsList = ({ hybrids }) => {
     return (
         <div>
-
+           {hybrids.map(hybrid => <ul><li key={hybrid.id}>{hybrid.name} - {hybrid.species} - {hybrid.origin} - {hybrid.personality} - {hybrid.image})</li></ul>)}
         </div>
     );
 };
