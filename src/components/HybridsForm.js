@@ -17,9 +17,9 @@ class HybridsForm extends Component {
 
     render() {
         return (
-            <div>
-
-            </div>
+            <form>
+                <input type='text' value={this.state.name} onChange={this.handleChange} name="name" />
+            </form>
         );
     }
 }
