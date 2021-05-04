@@ -6,7 +6,7 @@ class HybridsContainer extends Component {
     render() {
         return (
             <div>
-
+              HybridsContainer
             </div>
         )
     }
