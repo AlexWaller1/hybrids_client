@@ -1,9 +1,11 @@
 import React from 'react';
 
+import HybridsContainer from './HybridsContainer'
+
 const App = () => {
     return (
         <div>
-          <h1> Hi, Bodhi!</h1>
+          <HybridsContainer />
         </div>
     );
 };
