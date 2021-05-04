@@ -16,12 +16,16 @@ class HybridsForm extends Component {
    }
 
    handleChange = e => {
-       const { name, value }
+       const { name, value } = e.target
+       // name is name attribute on form, value is value attribute on form
+       this.setState({
+           [name]: value
+       })
    }
 
     render() {
         return (
-            <form>
+            <form onSubmit={this.handleSubmit}>
                 <label>Name:</label>
                 <input type='text' value={this.state.name} onChange={this.handleChange} name="name" />
                 <br/>
