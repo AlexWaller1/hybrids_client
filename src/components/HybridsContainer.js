@@ -1,6 +1,7 @@
 // this will be our hybrids container; it will hold hybrids data and hybrids methods
 
 import React, { Component } from 'react';
+import { connect } from 'redux'
 
 class HybridsContainer extends Component {
     render() {
