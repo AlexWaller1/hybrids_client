@@ -9,7 +9,9 @@ const Router = () => {
     return (
         <Switch>
             <Route exact path='/' component={Home} />
-            
+            <Route exact path='/about' component={About} />
+            <Route exact path='/' component={HybridsContainer} />
+
         </Switch>
     );
 };
