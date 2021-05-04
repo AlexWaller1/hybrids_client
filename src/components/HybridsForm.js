@@ -28,7 +28,7 @@ class HybridsForm extends Component {
 
    handleSubmit = e => {
        e.preventDefault()
-       this.props.addHybrid(state)
+       this.props.addHybrid(this.state)
    }
 
     render() {
