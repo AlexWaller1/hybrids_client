@@ -7,9 +7,10 @@ import About from '../components/About'
 
 const Router = () => {
     return (
-        <div>
-
-        </div>
+        <Switch>
+            <Route exact path='/' component={Home} />
+            
+        </Switch>
     );
 };
 
