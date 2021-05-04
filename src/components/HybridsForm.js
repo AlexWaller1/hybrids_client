@@ -15,6 +15,10 @@ class HybridsForm extends Component {
        image: ''
    }
 
+   handleChange = e => {
+       const { name, value }
+   }
+
     render() {
         return (
             <form>

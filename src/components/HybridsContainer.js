@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 
 import { fetchHybrids } from '../actions/hybridsActions'
+import HybridsForm from './HybridsForm'
 
 class HybridsContainer extends Component {
 
@@ -15,6 +16,7 @@ class HybridsContainer extends Component {
         return (
             <div>
               HybridsContainer
+              <HybridsForm />
             </div>
         )
     }
