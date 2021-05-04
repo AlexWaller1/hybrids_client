@@ -21,18 +21,19 @@ class HybridsForm extends Component {
                 <label>Name:</label>
                 <input type='text' value={this.state.name} onChange={this.handleChange} name="name" />
                 <br/>
-                <label>Name:</label>
-                <input type='text' value={this.state.name} onChange={this.handleChange} name="name" />
+                <label>Species:</label>
+                <input type='text' value={this.state.species} onChange={this.handleChange} name="species" />
                 <br/>
-                <label>Name:</label>
-                <input type='text' value={this.state.name} onChange={this.handleChange} name="name" />
+                <label>Origin:</label>
+                <input type='text' value={this.state.origin} onChange={this.handleChange} name="origin" />
                 <br/>
-                <label>Name:</label>
-                <input type='text' value={this.state.name} onChange={this.handleChange} name="name" />
+                <label>Personality:</label>
+                <input type='text' value={this.state.personality} onChange={this.handleChange} name="personality" />
                 <br/>
-                <label>Name:</label>
-                <input type='text' value={this.state.name} onChange={this.handleChange} name="name" />
+                <label>Image:</label>
+                <input type='text' value={this.state.image} onChange={this.handleChange} name="image" />
                 <br/>
+                <input type='submit' value="Create Hybrid" />
             </form>
         );
     }
