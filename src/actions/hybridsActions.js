@@ -11,11 +11,14 @@ export const fetchHybrids = () => {
 // this data will go to the hybridsReducer
 
 export const addHybrid = hybrid => {
-    fetch('http://localhost:3000/hybrids', {
+    return dispatch => {
+        fetch('http://localhost:3000/hybrids', {
         method: 'POST',
         body: JSON.stringify(hybrid),
         headers: { 'Content-Type': 'application/json' }
     })
     .then(resp => resp.json())
     .then(hybrid => dispatch({ type: 'ADD_HYBRID', payload: hybrid }))
+    }
+    
 }
