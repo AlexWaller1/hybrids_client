@@ -17,3 +17,5 @@ const Router = () => {
 };
 
 export default Router;
+
+// where we assign urls to our components

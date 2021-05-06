@@ -22,3 +22,6 @@ export const addHybrid = hybrid => {
     }
     
 }
+
+// dispatch - dispatches an action. This is the only way to trigger state change.
+// actions are events that cause a change to the state of the application

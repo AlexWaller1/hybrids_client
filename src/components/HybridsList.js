@@ -20,3 +20,7 @@ const mapStateToProps = state => {
 }
 
 export default connect(mapStateToProps)(HybridsList);
+
+// the connect() function connects a React component to Redux store
+// It provides its connected component with the pieces of the data it needs from the store,
+// and the functions it can use to dispatch actions to the store.
