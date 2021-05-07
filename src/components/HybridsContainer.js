@@ -24,3 +24,7 @@ class HybridsContainer extends Component {
 }
 
 export default connect(null, { fetchHybrids })(HybridsContainer);
+
+// componentDidMount special name for method, when HybridsContainer mounts, it will 
+// automatically call the method specified
+// we're not using any values from redux store, but we're using redux actions

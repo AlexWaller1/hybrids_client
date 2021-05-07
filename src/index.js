@@ -10,6 +10,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 
 import App from './components/App'
 import { rootReducer } from './reducers/rootReducer'
+import './index.css'
 
 
 // need to create a store for Redux => createStore 1. reducer 2. dev tools
@@ -46,4 +47,7 @@ ReactDOM.render(
 
 // The <Provider> component makes the Redux store available to any nested components that 
 // need access to the Redux store
+
+// thunk enables asynchronous calls inside of actions, allows us to return a function instead
+// of an object.
 
