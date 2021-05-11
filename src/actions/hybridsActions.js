@@ -9,6 +9,8 @@ export const fetchHybrids = () => {
     }
 }
 // this data will go to the hybridsReducer
+// the default of fetch is to make a get request
+// if not a get request, we need to specify
 
 
 
