@@ -31,6 +31,7 @@ const mapDispatchToProps = dispatch => {
         deleteHybrid: (id) => {dispatch(removeHybrid(id))}
     }
 }
+// mapDispatchToProps is responsible for enabling a component to dispatch actions
 export default connect(mapStateToProps, mapDispatchToProps)(HybridsList);
 
 // the connect() function connects a React component to Redux store
