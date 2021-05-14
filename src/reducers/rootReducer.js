@@ -1,9 +1,11 @@
 import { combineReducers } from 'redux'
 
 import { hybridsReducer } from './hybridsReducer'
+import { robotsReducer } from './robotsReducer'
 
 export const rootReducer = combineReducers({
-    hybrids: hybridsReducer
+    hybrids: hybridsReducer,
+    robots: robotsReducer
 })
 
 // State is immutable, this means you cannot modify it
