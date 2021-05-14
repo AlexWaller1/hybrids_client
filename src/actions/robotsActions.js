@@ -24,3 +24,20 @@ export const addRobot = robot => {
     .then(robot => dispatch({ type: 'ADD_ROBOT', payload: robot }))
    }
 }
+
+export const removeRobot = id => {
+    return dispatch => {
+
+        // dispatch({ type: 'REMOVE_ROBOT', payload: id })
+
+        fetch(`http:localhost:3000/robots/${id}`, {
+            method: 'DELETE',
+            //body: JSON.stringify({id})
+            headers: { 'Content-Type': 'application/json' }
+        })
+        .then(() => dispatch({ type: 'REMOVE_ROBOT', payload: id}))
+    }
+}
+
+// dispatch - dispatches an action. This is the only way to trigger state change
+// actions are events that cause a change to the state of the application
