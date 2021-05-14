@@ -19,3 +19,4 @@ const Router = () => {
 export default Router;
 
 // where we assign urls to our components
+// switch ensures that the first route that matches will get rendered.

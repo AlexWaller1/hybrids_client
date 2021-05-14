@@ -14,6 +14,7 @@ import './index.css'
 
 
 // need to create a store for Redux => createStore 1. reducer 2. dev tools
+// applyMiddleware is a way to give Redux more power, is like a plugin
 
 const store = createStore(
     rootReducer,
@@ -50,4 +51,9 @@ ReactDOM.render(
 
 // thunk enables asynchronous calls inside of actions, allows us to return a function instead
 // of an object.
+
+// thunk allows us to dispatch actions in an asynchronous manner, allows us to put the 
+// the fetch code in the actions instead of having it in the components
+
+// BrowserRouter enables the routes in our application
 

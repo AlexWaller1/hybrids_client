@@ -25,10 +25,12 @@ const HybridsList = ({ hybrids, deleteHybrid }) => {
 const mapStateToProps = state => {
     return { hybrids: state.hybrids }
 }
-
+// 
 const mapDispatchToProps = dispatch => {
     return {
         deleteHybrid: (id) => {dispatch(removeHybrid(id))}
+        // id is the argument for the function, the function is the value of the key value
+        // pair
     }
 }
 // mapDispatchToProps is responsible for enabling a component to dispatch actions

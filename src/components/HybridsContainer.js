@@ -10,6 +10,7 @@ class HybridsContainer extends Component {
 
     componentDidMount() {
         this.props.fetchHybrids()
+        // pulls hybrids data and fetches it for application
     }
 
     render() {
