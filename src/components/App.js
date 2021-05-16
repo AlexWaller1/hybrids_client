@@ -6,6 +6,7 @@ import Header from './Header'
 
 import HybridsContainer from './HybridsContainer'
 import NavLinks from './NavLinks';
+import RobotsContainer from './RobotsContainer';
 
 const App = () => {
     return (
@@ -13,6 +14,7 @@ const App = () => {
           <Header />
           <NavLinks />
           <HybridsContainer />
+          <RobotsContainer />
           <Router />
         </div>
     );

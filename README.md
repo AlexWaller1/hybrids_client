@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Welcome to Antibi Incorporated
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to Antibi Incorporated. As you are well aware given your employment, we track the hybrids who travel across the country in motorhomes. While they believe they innocently traveling, simply looking for new places to skate, and new individuals to meet, we are in fact tracking their activity.
 
-## Available Scripts
+When you have new hybrids to report, simply click on your username, and you will be able to enter the new hybrids.
 
-In the project directory, you can run:
+# Installing Antibi Incorporated
 
-### `yarn start`
+To get started, fork and clone the Antibi Incorporated repository to your terminal. Once the terminal is open there are two crucial steps that need to be followed to get Antibi Incorporated up and running.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+First, you need to install the gems that contribute to making this appication work. To do this, run bundle install.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+$ bundle install
 
-### `yarn test`
+Second, in order for the application to run, the terminal must be running rails s at all times or it will not be bale to work. To run shotgun, simply type into the terminal:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+$ rails s
 
-### `yarn build`
+Finally, since this is a fullstack application, you will also need to open the React Application. So type the following into the terminal as well:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+$ npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-As long as the previous steps have been implemented, you will now be on the home page of Antibi Incorporated. We are happy to have you and enthusiastic about your future contributions. In order to proceed any further you will need to sign up with a username and a password. If you happen to already have an account, then click login and you can enter your credentials there. Once you have signed up or logged in, you can then view others submissions as well as make your own submissions. You will also be able to edit and take down your submissions.
 
-### `yarn eject`
+# Development
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Just remember to run bundle install and then rails s first and foremost. It is very important to remember that rails s must be running in order to view this app. The url port that is available is always localhost:3000
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Contributing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Contributions that improve this app are welcome. Contributions can be made here https://github.com/AlexWaller1/hybrids_client . All collaborators are expected to adhere to the code of conduct.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Liscense
 
-## Learn More
+This app is available as open source under the terms of the MIT Liscense. You can see the liscense in the readme_liscense folder of this repository.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Code of Conduct
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Anyone participating on Antibi Incorporated in any way must adhere to the code of conduct.

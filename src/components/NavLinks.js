@@ -17,6 +17,9 @@ const NavLinks = () => {
             <li>
                 <Link to="/hybrids">Hybrids</Link>
             </li>
+            <li>
+                <Link to="/robots">Robots</Link>
+            </li>
 
         </ul>
     )
