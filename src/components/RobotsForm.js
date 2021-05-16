@@ -60,3 +60,8 @@ class RobotsForm extends Component {
 }
 
 export default connect(null, { addRobot })(RobotsForm);
+
+// the react state is stored locally within a component. When it needs to be shared with
+// other components, it is passed down through props. In practice, this means that the top
+// most component in your app needing access to a mutable value in its state.
+// state here is more short term such as typing characters in a text field
