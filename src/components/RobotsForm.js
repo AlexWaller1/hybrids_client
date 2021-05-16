@@ -36,9 +36,25 @@ class RobotsForm extends Component {
     render() {
         return (
             <form onSubmit={this.handleSubmit}>
+                <label>Name:</label>
+                <input type='text' value={this.state.name} onChange={this.handleChange} name="name" />
+                <br/>
+                <label>Model:</label>
+                <input type='text' value={this.state.model} onChange={this.handleChange} name="model" />
+                <br/>
+                <label>Manufacturer:</label>
+                <input type='text' value={this.state.manufacturer} onChange={this.handleChange} name="manufacturer" />
+                <br/>
+                <label>Purpose:</label>
+                <input type='text' value={this.state.purpose} onChange={this.handleChange} name="purpose" />
+                <br/>
+                <label>Image:</label>
+                <input type='text' value={this.state.image} onChange={this.handleChange} name="image" />
+                <br/>
+                <input type='submit' value="Create Robot" />
 
             </form>
-        )
+        );
     }
 
 }
