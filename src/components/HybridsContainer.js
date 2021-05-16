@@ -29,3 +29,6 @@ export default connect(null, { fetchHybrids })(HybridsContainer);
 // componentDidMount special name for method, when HybridsContainer mounts, it will 
 // automatically call the method specified
 // we're not using any values from redux store, but we're using redux actions
+// react, react-redux, react-router-dom are different packages
+// react-redux allows us to pass redux values and actions to components as props
+// react-router-dom responsible for URL and links
