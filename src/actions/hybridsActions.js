@@ -12,12 +12,7 @@ export const fetchHybrids = () => {
 // the default of fetch is to make a get request
 // if not a get request, we need to specify
 
-// 
-/* export const sortAlf = () => {
-    return {
-        type: 'SORT_ALF'
-    }
-} */
+
 
 export const addHybrid = hybrid => {
     return dispatch => {
