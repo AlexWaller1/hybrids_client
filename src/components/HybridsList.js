@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { connect } from 'react-redux'
 import { removeHybrid } from '../actions/hybridsActions';
 
 const HybridsList = ({ hybrids, deleteHybrid }) => {
+
+  //function Count() {
+       const [count, setCount] = useState(0);
+   //}
+
     return (
         <div><ul>
            {hybrids.map(hybrid => (
@@ -12,6 +17,8 @@ const HybridsList = ({ hybrids, deleteHybrid }) => {
                 <h4>  {hybrid.origin} </h4>
                 <h5>  {hybrid.personality} </h5>
                 <img src={hybrid.image} alt='Hybrid Image'/> 
+                <h6> Likes { count }</h6>
+                <button onClick={() => setCount(count + 1)}>Like</button>
                 <button onClick={e => {
                     deleteHybrid(hybrid.id)
                 }}>delete</button>

@@ -6,6 +6,7 @@ export const hybridsReducer = (state = [], action) => {
             return [...state, action.payload]
         case 'REMOVE_HYBRID':
             return state.filter(hybrid => hybrid.id!==action.payload)
+        
     
         default:
             return state
