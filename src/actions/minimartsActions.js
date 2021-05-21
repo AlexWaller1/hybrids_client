@@ -21,5 +21,18 @@ export const fetchMinimarts = () => {
 // if not a get request, we need to specify
 
 export const addMinimart = minimart => {
-    
+    // need argument because a specific object is being posted
+    return dispatch => {
+        fetch('http://localhost:3000/minimarts', {
+            method: 'POST',
+            // need to specify that this is a post request
+            body: JSON.stringify(minimart),
+            // object needs to be converted to a json string to be passed to server
+            headers: { 'Content-Type': 'application/json' }
+            // establishing protocols
+        })
+        .then(resp => resp.json())
+        // minimart objects converted to javascript objects
+        .then(minimart => dispatch({ type: 'ADD_MINIMART', payload: minimart }))
+    }
 }
