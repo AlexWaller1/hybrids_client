@@ -21,7 +21,8 @@ export const fetchMinimarts = () => {
 // if not a get request, we need to specify
 
 export const addMinimart = minimart => {
-    // need argument because a specific object is being posted
+    // need argument because a specific object is being posted and needs to
+    // stringified
     return dispatch => {
         fetch('http://localhost:3000/minimarts', {
             method: 'POST',
@@ -34,5 +35,19 @@ export const addMinimart = minimart => {
         .then(resp => resp.json())
         // minimart objects converted to javascript objects
         .then(minimart => dispatch({ type: 'ADD_MINIMART', payload: minimart }))
+        // object will then dispatched with type and payload specified
+    }
+}
+
+export const removeMinimart = id => {
+    // function needs an argument
+    return dispatch => {
+
+        // dispatch({ type: 'REMOVE_MINIMART', payload: id })
+
+        fetch(`http://localhost:3000/minimarts/${id}`, {
+            // since id will change depending on the object, it needs to be interpolated
+            // into the url
+        })
     }
 }
