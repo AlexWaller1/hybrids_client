@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { removeHybrid } from '../actions/hybridsActions';
 
 const HybridsList = ({ hybrids, deleteHybrid }) => {
-
+// takes arguments from mapStateToProps and mountDispatchToProps
   
        const [count, setCount] = useState(0);
    
