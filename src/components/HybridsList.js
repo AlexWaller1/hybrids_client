@@ -4,9 +4,9 @@ import { removeHybrid } from '../actions/hybridsActions';
 
 const HybridsList = ({ hybrids, deleteHybrid }) => {
 
-  //function Count() {
+  
        const [count, setCount] = useState(0);
-   //}
+   
 
     return (
         <div><ul>
@@ -18,7 +18,7 @@ const HybridsList = ({ hybrids, deleteHybrid }) => {
                 <h5>  {hybrid.personality} </h5>
                 <img src={hybrid.image} alt='Hybrid Image'/> 
                 <h6> Likes { count }</h6>
-                <button onClick={() => setCount(count + 1)}>Like</button>
+                <button onClick={() => setCount(count + 1)} id={hybrid.id}>Like</button>
                 <button onClick={e => {
                     deleteHybrid(hybrid.id)
                 }}>delete</button>

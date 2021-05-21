@@ -15,7 +15,8 @@ class LikeButton extends Component {
             likes: newCount
         });
     };
-
+    // like button is a good fit for shorter term state
+    // therefore, it should go in the react state
     render() {
         return <button onClick={this.addLike}>
             Have Further Interest: {this.state.likes}</button>
