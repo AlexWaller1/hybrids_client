@@ -48,6 +48,15 @@ export const removeMinimart = id => {
         fetch(`http://localhost:3000/minimarts/${id}`, {
             // since id will change depending on the object, it needs to be interpolated
             // into the url
+            method: 'DELETE',
+            // method must be specified if not a get fetch.
+            headers: { 'Content-Type': 'application/json' }
+            // establishing protocols
         })
+        .then(() => dispatch({ type: 'REMOVE_MINIMART', payload: id }))
+        // ask if we need an argument for the id of this function
     }
 }
+
+// dispatch - dispatches an action. This is the only way to trigger state change.
+// actions are events that cause a change to the state of the application's redux state
