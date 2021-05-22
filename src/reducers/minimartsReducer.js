@@ -6,11 +6,14 @@ export const minimartsReducer = (state = [], action) => {
     switch(action.type){
         case 'FETCH_MINIMARTS':
             return action.payload
+            // FETCH_MINIMARTS simply returns the payload of the action.
         case 'ADD_MINIMART':
             return [...state, action.payload]
+            // ADD_MINIMART returns the previous state plus the new payload object.
         case 'REMOVE_MINIMART':
             return state.filter(minimart => minimart.id!==action.payload)
-
+            // REMOVE_MINIMART returns the objects that do not have the id of the
+            // deleted payload
             default:
                 return state
     }
