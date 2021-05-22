@@ -4,6 +4,7 @@ export const minimartsReducer = (state = [], action) => {
     // since reducers will always send a new state to the Redux store, the 
     // state will always start as an empty array.
     switch(action.type){
+        // switch will skip other actions until it finds a matching case
         case 'FETCH_MINIMARTS':
             return action.payload
             // FETCH_MINIMARTS simply returns the payload of the action.
@@ -16,6 +17,8 @@ export const minimartsReducer = (state = [], action) => {
             // deleted payload
             default:
                 return state
+                // if none of these actions match the action called
+                // we'll simply return the empty array of the new state
     }
 }
 
