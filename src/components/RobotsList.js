@@ -1,10 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux'
 import { removeRobot } from '../actions/robotsActions';
+import RobotsForm from './RobotsForm';
 
 const RobotsList = ({ robots, deleteRobot }) => {
     return (
-        <div><ul>
+        <div>
+            <RobotsForm />
+            <ul>
           {robots.map(robot => (
               <li key={robot.id}>
                   <h2> {robot.name} </h2>

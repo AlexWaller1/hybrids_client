@@ -1,15 +1,20 @@
-import React, { useState } from 'react';
+import React  from 'react';
 import { connect } from 'react-redux'
 import { removeHybrid } from '../actions/hybridsActions';
+import HybridsForm from './HybridsForm';
+
 
 const HybridsList = ({ hybrids, deleteHybrid }) => {
 // takes arguments from mapStateToProps and mountDispatchToProps
   
-       const [count, setCount] = useState(0);
+       
    
 
     return (
-        <div><ul>
+        <div>
+            <HybridsForm />
+            <ul>
+
            {hybrids.map(hybrid => (
             <li key={hybrid.id}>
                 <h2>  {hybrid.name} </h2>
@@ -17,8 +22,7 @@ const HybridsList = ({ hybrids, deleteHybrid }) => {
                 <h4>  {hybrid.origin} </h4>
                 <h5>  {hybrid.personality} </h5>
                 <img src={hybrid.image} alt='Hybrid Image'/> 
-                <h6> Likes { count }</h6>
-                <button onClick={() => setCount(count + 1)} id={hybrid.id}>Like</button>
+                
                 <button onClick={e => {
                     deleteHybrid(hybrid.id)
                 }}>delete</button>
@@ -40,6 +44,12 @@ const mapDispatchToProps = dispatch => {
         // pair
     }
 }
+/* 
+handleDelete = () => {
+    this.props.removeHybrid(id)
+}
+
+*/
 // mapDispatchToProps is responsible for enabling a component to dispatch actions
 export default connect(mapStateToProps, mapDispatchToProps)(HybridsList);
 

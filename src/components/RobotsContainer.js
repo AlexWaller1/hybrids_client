@@ -16,7 +16,7 @@ class RobotsContainer extends Component {
     render() {
         return (
             <div>
-                <RobotsForm />
+                
             </div>
         )
     }

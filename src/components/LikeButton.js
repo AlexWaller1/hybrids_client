@@ -10,10 +10,13 @@ class LikeButton extends Component {
     // Create a click handler that will increment the number of likes
     // each time a button is clicked
     addLike = () => {
-        let newCount = this.state.likes + 1;
+        /*let newCount = this.state.likes + 1;
         this.setState({
             likes: newCount
-        });
+        });*/
+        this.setState(state => ({
+            likes: state.likes + 1
+        }))
     };
     // like button is a good fit for shorter term state
     // therefore, it should go in the react state
