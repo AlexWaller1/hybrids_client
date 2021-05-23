@@ -24,5 +24,22 @@ class MinimartsForm extends Component {
         image: ''
     }
 
+    handleChange = e => {
+        const { name, value } = e.target
+        // name is name attribute on form, value is value attribute on form
+        this.setState({
+            [name]: value
+            // grabbing the values from the state so they can be changed on the form
+        })
+    }
+    // allows user to type in text fields
+
+    handleSubmit = e => {
+        e.preventDefault()
+        this.props.addMinimart()
+        // good alternative for mapDispatchToProps
+    }
+    // takes submitted data and is sent to post fetch request.
     
+
 }
