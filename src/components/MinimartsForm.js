@@ -66,6 +66,7 @@ class MinimartsForm extends Component {
             </form>
         );
     }
+    // form is rendered in JSX
     
 
 }
