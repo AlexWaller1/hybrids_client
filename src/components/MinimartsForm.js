@@ -62,9 +62,21 @@ class MinimartsForm extends Component {
                 <label>Image:</label>
                 <input type='text' value={this.state.image} onChange={this.handleChange} name="image" />
                 <br/>
+                <input type='submit' value="Create Minimart" />
             </form>
         );
     }
     
 
 }
+
+export default connect(null, { addMinimart })(MinimartsForm);
+// first argument of a connect method is reserved for mapStateToProps
+// it is null since Redux state is not being mapped to props here.
+
+// the eact state is stored locally within a component. When it needs to be shared
+// with other components, it is passed down through props. In practice, this means that the
+// top most component in your app needing access to a state.
+// state here is more short term such as typing characters in a text field
+// also, since what is typed in the text fields are supposed to empty out we don't need to persist
+// those changes to the database, just the information that is being submitted.
