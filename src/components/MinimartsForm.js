@@ -40,6 +40,22 @@ class MinimartsForm extends Component {
         // good alternative for mapDispatchToProps
     }
     // takes submitted data and is sent to post fetch request.
+
+    render() {
+        return (
+            <form onSubmit={this.handleSubmit}>
+                <label>Name:</label>
+                <input type='text' value={this.state.name} onChange={this.handleChange} name="name" />
+                <br/>
+                <label>Address:</label>
+                <input type='text' value={this.state.address} onChange={this.handleChange} name="address" />
+                <br/>
+                <label>Sodamachine:</label>
+                <input type='text' value={this.state.sodamachine} onChange={this.handleChange} name="sodamachine" />
+                <br/>
+            </form>
+        )
+    }
     
 
 }
