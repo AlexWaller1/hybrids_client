@@ -53,8 +53,17 @@ class MinimartsForm extends Component {
                 <label>Sodamachine:</label>
                 <input type='text' value={this.state.sodamachine} onChange={this.handleChange} name="sodamachine" />
                 <br/>
+                <label>Description:</label>
+                <input type='text' value={this.state.description} onChange={this.handleChange} name="description" />
+                <br/>
+                <label>State:</label>
+                <input type='text' value={this.state.state} onChange={this.handleChange} name="state" />
+                <br/>
+                <label>Image:</label>
+                <input type='text' value={this.state.image} onChange={this.handleChange} name="image" />
+                <br/>
             </form>
-        )
+        );
     }
     
 
