@@ -3,7 +3,7 @@
 // that way the form and the list can be called on the same page
 import React from 'react';
 import { connect } from 'react-redux'
-import { removeMinimart } from '../actions/minimartActions';
+import { removeMinimart } from '../actions/minimartsActions';
 import MinimartForm from './MinimartsForm';
 
 const MinimartsList = ({ minimarts, deleteMinimart }) => {

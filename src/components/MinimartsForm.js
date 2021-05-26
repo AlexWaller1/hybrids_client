@@ -36,7 +36,7 @@ class MinimartsForm extends Component {
 
     handleSubmit = e => {
         e.preventDefault()
-        this.props.addMinimart()
+        this.props.addMinimart(this.state)
         // good alternative for mapDispatchToProps
     }
     // takes submitted data and is sent to post fetch request.
