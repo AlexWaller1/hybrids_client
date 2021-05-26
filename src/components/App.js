@@ -57,6 +57,41 @@ oriented-programming: Encapsulation, Abstraction, Inheritance, and Polymorphism.
      hungry, and energy and each of these variables has their respective fields.
 
      There is also a private method: bark(). The dog class can call this whenever it wants, and the 
+     other classes can not tell the dog when to bark. There are also public methods such as sleep(),
+     play(), and eat() that are available to other classes. Each of these functions modifies the
+     internal state of the Dog class and may invoke bark(), when this happens the private state
+     and public methods are bonded.
+
+     - 2. Abstracton
+
+          Abstraction is an extension of encapsulation. It is the process of selecting data
+          from a larger pool to show only the relevant details to the object. uppose you want
+          to create a dating application and you are asked to collect all the information
+          about your users. You might reeive the following data from your user: Full name, 
+          address, phone number, favorite food, etc. This amount of data is great, however, not
+          all of it is required to create a dating profile. You only need to select the 
+          information that is pertinent to our dating application from that pool. The process
+          of fetching/removing/selecting the user information from a larger pool is referred to
+          as Abstraction. One of the advantages of Abstraction is beng able to apply the same
+          information you used for the dating application to other applications with little
+          or no application.
+
+     - 3. Inheritance
+     
+          Inheritance is the ability of one object to acquire some/all properties of another
+          object. For example, a child inherits the traits of his/her parents. With inheritance
+          , reusability is a major advantage. You can reuse the fields and methods of the existing
+          class. In Java, there are various types of inheritances: single, multiple, multilevel,
+          hierarchal, and hybrid. For example, Apple is a fruit so assume that we have a class
+          fruit so assume that we have a class Fruit and a subclass of it named Apple. Our Apple
+          acquires the properties of the Fruit class. Other classifications could be grape, pear
+          , and mango, etc. Apple thesub-class acquires these properties from Fruit and has some
+          unique properties, which are different from other sub-classes of Fruit such a red,
+          round, depression at the top.
+
+               
+
+        
 
 
 
