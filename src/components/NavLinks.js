@@ -20,6 +20,9 @@ const NavLinks = () => {
             <li>
                 <Link to="/robots">Robots</Link>
             </li>
+            <li>
+                <Link to="/minimarts">Minimarts</Link>
+            </li>
 
         </ul>
     )

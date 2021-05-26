@@ -44,6 +44,8 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return {
         deleteMinimart: (id) => {dispatch(removeMinimart(id))}
+        // id is the argument for the function, the function is the value of the 
+        // key-value pair
     }
 }
 

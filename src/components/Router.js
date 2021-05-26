@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom'
 import Home from '../components/Home'
 import HybridsList from './HybridsList'
 import RobotsList from './RobotsList'
+import MinimartsList from './MinimartsList'
 import About from '../components/About'
 
 const Router = () => {
@@ -13,6 +14,7 @@ const Router = () => {
             <Route exact path='/about' component={About} />
             <Route exact path='/hybrids' component={HybridsList} />
             <Route exact path='/robots' component={RobotsList} />
+            <Route exact path='/minimarts' component={MinimartsList} />
 
         </Switch>
     );
