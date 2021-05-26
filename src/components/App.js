@@ -47,7 +47,16 @@ oriented-programming: Encapsulation, Abstraction, Inheritance, and Polymorphism.
 
 - 1. Encapsulation
 
-     
+     Encapsulation is accomplished when each object maintains a private state, inside a class.
+     Other objects cannot access this state directly, instead, they can only invoke a list of 
+     public functions. The object manages its own state via these functions and no other class
+     can alter it unless explicity allowed. In order to communicate with the object, you will 
+     need to utilize the methods provided. One way to think of encapsulation is by using the 
+     example of people and their dogs. If we want to apply encapsulation, we do so by encapsulating
+     all dog logic into a Dog class. The 'state' of the dog is in the private variables playful,
+     hungry, and energy and each of these variables has their respective fields.
+
+     There is also a private method: bark(). The dog class can call this whenever it wants, and the 
 
 
 
