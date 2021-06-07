@@ -89,6 +89,15 @@ oriented-programming: Encapsulation, Abstraction, Inheritance, and Polymorphism.
           unique properties, which are different from other sub-classes of Fruit such a red,
           round, depression at the top.
 
+    - 4. Polymorphism
+
+        Polymorphism gives us a way to use a class exactly like its parent so there is no
+        confusion with mixing types. This being said, each child sub-class keeps its own
+        functions/methods as they are. If we had a superclass called Mammal that has a method
+        called mammalSound(). The sub-classes of Mammals could be Dogs, whales, elephants, and
+        horses. Each of these would have their own iteration of a mammal sound (dog-barks'
+        whale-clicks)
+
                
 
         
