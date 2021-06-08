@@ -58,5 +58,17 @@ class SkateparksForm extends Component {
             </form>
         );
     }
+    // form is rendered in JSX
     
 }
+
+export default connect(null, { addSkatepark })(SkateparksForm);
+// first argument of a connect method is reserved for mapStateToProps
+// it null since Redux state is not being mapped to props here.
+
+// the react state is stored locally within a component. When it needs to be shared
+// with other components, it is passed down through props. In practice, this means that the 
+// top most in your app needing access to a state.
+// state here is more short term such as typing characters in a text field
+// also, since what is typed in the text fields are supposed to empty out we don't need to 
+// persist those changes to the database, just the information that is being submitted.
