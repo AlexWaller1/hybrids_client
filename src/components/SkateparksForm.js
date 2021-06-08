@@ -48,9 +48,15 @@ class SkateparksForm extends Component {
                 <label>Location:</label>
                 <input type='text' value={this.state.location} onChange={this.handleChange} name="location" />
                 <br/>
+                <label>Features:</label>
+                <input type='text' value={this.state.features} onChange={this.handleChange} name="features" />
+                <br/>
+                <label>Image:</label>
+                <input type='text' value={this.state.image} onChange={this.handleChange} name="image" />
+                <input type='submit' value="Create Skatepark" />
 
             </form>
-        )
+        );
     }
     
 }
