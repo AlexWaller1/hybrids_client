@@ -39,7 +39,7 @@ const mapStateToProps = state => {
     // connecting to Redux state, and then setting up a key-value pair. The key can be called
     // in our jsx
 }
-
+// mapDispatchToProps is responsible for enabling a component to dispatch actions
 const mapDispatchToProps = dispatch => {
     return {
         deleteSkatepark: (id) => {dispatch(removeSkatepark(id))}
@@ -47,5 +47,13 @@ const mapDispatchToProps = dispatch => {
         // of the key-value pair
     }
 }
+
+/* 
+
+handleDelete = () => {
+    this.props.removeSkatepark(id)
+}
+
+*/
 
 export default connect(mapStateToProps, mapDispatchToProps)(SkateparksList);
