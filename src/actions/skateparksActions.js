@@ -8,7 +8,7 @@ export const fetchSkateparks = () => {
         // this is route from api we will get the data from
         .then(resp => resp.json())
         // data will need to be converted from JSON object to JavaScript object
-        .then(skateparks => dispatch({ type: 'FETCH_SKATEPARKS', payload: skateparks}))
+        .then(skateparks => dispatch({ type: 'FETCH_SKATEPARKS', payload: skateparks }))
         // we will take objects and return a dispatch with type and payload
     }
 }
