@@ -8,6 +8,7 @@ import SkateparkForm from './SkateparkForm';
 
 const SkateparksList = ({ skateparks, deleteSkatepark }) => {
     // takes arguments of key name from mapStateToProps and mountDispatchToProps
+    return(
     <div>
         <SkateparkForm />
         <ul>
@@ -18,12 +19,33 @@ const SkateparksList = ({ skateparks, deleteSkatepark }) => {
                     <h4> {skatepark.features} </h4>
                     <img src={skatepark.image} alt='Skatepark Image' />
 
-                    <button>
-                        
+                    <button onClick={
+                        e => {
+                            deleteSkatepark(skatepark.id)
+                        }
+                    }>
+                        Delete
                     </button>
 
                 </li>
             ))}
         </ul>
     </div>
+    );
+};
+
+const mapStateToProps = state => {
+    return { minimarts: state.minimarts }
+    // connecting to Redux state, and then setting up a key-value pair. The key can be called
+    // in our jsx
 }
+
+const mapDispatchToProps = dispatch => {
+    return {
+        deleteSkatepark: (id) => {dispatch(removeSkatepark(id))}
+        // id is the argument for the function, the function is the value
+        // of the key-value pair
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(SkateparksList);
