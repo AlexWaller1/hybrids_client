@@ -47,3 +47,17 @@ return (
     </section>
   )
 }
+/* 
+
+Assuming we do have the right hybrid object in the store, useSelector will return that, and 
+we can use it to render the name and content of the hybrid in the page.
+
+You might notice that this looks fairly similar to the logic we have in the body of our
+HybridsList.js component, where we loop over the whole hybrids array to show excerpts in the 
+main feed. We could try to extract a Hybrid component that could be used in both places, but
+there are already some differences in how we're showing a hybrid excerpt and the whole hybrid.
+It's usually better ti keep writing things separately for a while even if there's some 
+duplication, and then we can decide later if the different sections of code are similar enough 
+that we can really extract a reusuable component.
+
+*/
