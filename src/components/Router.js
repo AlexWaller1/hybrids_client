@@ -4,8 +4,10 @@ import { Switch, Route } from 'react-router-dom'
 import Home from '../components/Home'
 import HybridsList from './HybridsList'
 import RobotsList from './RobotsList'
+import SingleHybrid from './SingleHybrid'
 import MinimartsList from './MinimartsList'
 import About from '../components/About'
+
 
 const Router = () => {
     return (
@@ -13,9 +15,10 @@ const Router = () => {
             <Route exact path='/' component={Home} />
             <Route exact path='/about' component={About} />
             <Route exact path='/hybrids' component={HybridsList} />
+            <Route exact path='/hybrid/:hybridId' component={SingleHybrid} />
             <Route exact path='/robots' component={RobotsList} />
             <Route exact path='/minimarts' component={MinimartsList} />
-
+           
         </Switch>
     );
 };

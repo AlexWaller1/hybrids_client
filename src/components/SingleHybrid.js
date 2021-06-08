@@ -2,7 +2,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 
-export const SingleHybridPage = ({ match }) => {
+export const SingleHybrid = ({ match }) => {
     const { hybridId } = match.params
     // React Router will pass in a match object as a prop that contains the URL information
     // we're looking for. When we set up the route to render this component, we're going to
@@ -61,3 +61,4 @@ duplication, and then we can decide later if the different sections of code are 
 that we can really extract a reusuable component.
 
 */
+export default SingleHybrid
