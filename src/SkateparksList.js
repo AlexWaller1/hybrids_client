@@ -8,4 +8,22 @@ import SkateparkForm from './SkateparkForm';
 
 const SkateparksList = ({ skateparks, deleteSkatepark }) => {
     // takes arguments of key name from mapStateToProps and mountDispatchToProps
+    <div>
+        <SkateparkForm />
+        <ul>
+            {skateparks.map(skatepark =>(
+                <li key={skatepark.id}>
+                    <h2> {skatepark.name} </h2>
+                    <h3> {skatepark.location} </h3>
+                    <h4> {skatepark.features} </h4>
+                    <img src={skatepark.image} alt='Skatepark Image' />
+
+                    <button>
+                        
+                    </button>
+
+                </li>
+            ))}
+        </ul>
+    </div>
 }
