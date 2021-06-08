@@ -3,12 +3,14 @@ import { combineReducers } from 'redux'
 import { hybridsReducer } from './hybridsReducer'
 import { robotsReducer } from './robotsReducer'
 import { minimartsReducer } from './minimartsReducer'
+import { skateparksReducer } from './skateparksReducer'
 
 export const rootReducer = combineReducers({
     // all reducers must be passed through the route reducer
     hybrids: hybridsReducer,
     robots: robotsReducer,
-    minimarts: minimartsReducer
+    minimarts: minimartsReducer,
+    skateparks: skateparksReducer
 })
 
 // State is immutable, this means you cannot modify it

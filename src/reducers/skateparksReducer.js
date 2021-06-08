@@ -1,8 +1,6 @@
 // will go through root reducer when state changes related to skatepars are made
-
-import MinimartsForm from "../components/MinimartsForm"
-
 // actions for Skateparks passed to rootReducer through this reducer.
+
 export const skateparksReducer = (state = [], action) => {
     // reducers need two arguments, state and action
     // since reducers will always send a new state to the Redux store, the state
