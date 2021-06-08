@@ -7,7 +7,7 @@ export const SingleHybrid = ({ match }) => {
     // React Router will pass in a match object as a prop that contains the URL information
     // we're looking for. When we set up the route to render this component, we're going to
     // tell it to parse the second part of the URL as a variable named hybridId, and 
-    // we can rad that value from match.params
+    // we can read that value from match.params
 
     const hybrid = useSelector(state => 
         state.hybrids.find(hybrid => hybrid.id === hybridId)
