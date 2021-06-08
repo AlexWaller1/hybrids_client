@@ -34,3 +34,10 @@ export const addSkatepark = skatepark => {
     }
 
 }
+
+export const removeSkatepark = id => {
+    // function needs an argument
+    return dispatch => {
+        
+    }
+}
