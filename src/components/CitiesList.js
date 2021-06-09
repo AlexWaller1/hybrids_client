@@ -48,6 +48,7 @@ const mapStateToProps = state => {
 }
 
 const mapDispatchToProps = dispatch => {
+    // map dispatch to props always needs an argument of dispatch
     return {
         deleteCity: (id) => {dispatch(removeCity(id))}
         // id is the argument for the function, the function is the value of the key-value pair
