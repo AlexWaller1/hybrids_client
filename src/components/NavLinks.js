@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+// if related to navigation, it will typically be imported from react-router-dom
 import './NavLinks.css'
 
 const NavLinks = () => {
@@ -25,6 +26,9 @@ const NavLinks = () => {
             </li>
             <li>
                 <Link to="/skateparks">Skateparks</Link>
+            </li>
+            <li>
+                <Link to="/cities">Cities</Link>
             </li>
 
         </ul>

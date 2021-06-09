@@ -3,7 +3,7 @@
 // application and for the form and list. When the application starts, and this component 
 // mounts, we will call on the fetchCities function from the actions folder.
 import React, { Component } from 'react';
-import { render } from 'react-dom';
+
 import { connect } from 'react-redux'
 
 import { fetchCities } from '../actions/citiesActions'

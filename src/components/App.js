@@ -9,6 +9,7 @@ import NavLinks from './NavLinks';
 import RobotsContainer from './RobotsContainer';
 import MinimartsContainer from './MinimartsContainer';
 import SkateparksContainer from './SkateparksContainer';
+import CitiesContainer from './CitiesContainer';
 
 const App = () => {
     return (
@@ -19,6 +20,7 @@ const App = () => {
           <RobotsContainer />
           <MinimartsContainer />
           <SkateparksContainer />
+          <CitiesContainer />
           <Router />
         </div>
     );
