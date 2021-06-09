@@ -11,3 +11,16 @@ export const fetchMotorhomes = () => {
     }
 }
 
+export const addMotorhome = motorhome => {
+    return(dispatch) => {
+        fetch('http://localhost:3000/motorhomes', {
+            method: 'POST',
+            body: JSON.stringify(motorhome),
+            headers: { 'Content-Type': 'application/json' }
+
+        })
+        .then(resp => resp.json())
+        .then(motorhome => dispatch({ type: 'ADD_MOTORHOME', payload: motorhome }))
+    }
+}
+
