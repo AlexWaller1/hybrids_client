@@ -43,9 +43,31 @@ class CitiesForm extends Component {
 
     render() {
         return (
-            <form>
-                
+            <form onSubmit={this.handleSubmit}>
+                <label>Name:</label>
+                <input type='text' value={this.state.name} onChange={this.handleChange} name="name" />
+                <br/>
+                <label>Population:</label>
+                <input type='text' value={this.state.population} onChange={this.handleChange} name="population" />
+                <br />
+                <label>State:</label>
+                <input type='text' value={this.state.state} onChange={this.handleChange} name="state" />
+                <br/>
+                <label>Country:</label>
+                <input type='text' value={this.state.country} onChange={this.handleChange} name="country" />
+                <br/>
+                <label>Report:</label>
+                <input type='text' value={this.state.report} onChange={this.handleChange} name="report" />
+                <br/>
+                <label>Image:</label>
+                <input type='text' value={this.state.image} onChange={this.handleChange} name="image" />
+                <br/>
+                <input type='submit' value="Create City" />
+
             </form>
-        )
+        );
     }
+    // form is rendered in JSX
 }
+
+export default connect(null, { addCity })(CitiesForm);
