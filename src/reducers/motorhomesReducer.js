@@ -4,6 +4,8 @@
 // there will also need to be a default state, so if for whatever reason none of the actions match, then
 // we can return a default state, which will simply be an empty array
 
+// as always, this reducer will need to go through the rootReducer
+
 export const motorhomesReducer = ({ state = [], action }) => {
 // reducer functions will always need 
     switch(action.type) {
@@ -16,6 +18,7 @@ export const motorhomesReducer = ({ state = [], action }) => {
 
         case 'REMOVE_MOTORHOME':
         return state.filter(motorhome => motorhome.id!==action.payload)
+        // when we call our delete action
 
         default:
             return state
