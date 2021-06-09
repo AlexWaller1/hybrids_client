@@ -71,3 +71,12 @@ class CitiesForm extends Component {
 }
 
 export default connect(null, { addCity })(CitiesForm);
+// first argument of a connect method is reserved for mapStateToProps
+// it is null since Redux state is not being mapped to props here.
+
+// The React state is stored locally within a component. When it needs to be shared
+// with other components, it is passed through props. In practice, this means that the 
+// top most component in your app needing access to a state
+// state here is more short term such as typing characters in a text field
+// also, since what is typed in the text fields are supposed to empty out we don't need to persist
+// those changes to the database, just he information that is being submitted.
