@@ -57,3 +57,11 @@ handleDelete = () => {
 */
 
 export default connect(mapStateToProps, mapDispatchToProps)(SkateparksList);
+
+// the connect() fnction connects a React component to Redux store
+// It provides its connected component with the pieces of the data it needs from the store,
+// and the functions it can use to dispatch actions to the store
+// connect method provided by react-redux, a library that connects react and redux
+// the connect method passes redux values as props to components
+// because they are props, the components will re render components immediately
+// mapDispatchToProps sends props to component
