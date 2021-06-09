@@ -24,6 +24,7 @@ class CitiesContainer extends Component {
     }
 }
 
+export default connect(null, { fetchCities })(CitiesContainer);
 // componentDidMount special name for method, when CitiesContainer mounts, it will
 // automatically call the method specified
 // we're not using any values from redux store, but we're using redux actions
