@@ -23,6 +23,9 @@ const NavLinks = () => {
             <li>
                 <Link to="/minimarts">Minimarts</Link>
             </li>
+            <li>
+                <Link to="/skateparks">Skateparks</Link>
+            </li>
 
         </ul>
     )
