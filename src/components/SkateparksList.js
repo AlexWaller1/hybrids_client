@@ -3,14 +3,14 @@
 // that way the form and the list can be called on the same page
 import React from 'react';
 import { connect } from 'react-redux'
-import { removeSkatepark } from '../actions/skateparkActions';
-import SkateparkForm from './SkateparkForm';
+import { removeSkatepark } from '../actions/skateparksActions';
+import SkateparksForm from './SkateparksForm';
 
 const SkateparksList = ({ skateparks, deleteSkatepark }) => {
     // takes arguments of key name from mapStateToProps and mountDispatchToProps
     return(
     <div>
-        <SkateparkForm />
+        <SkateparksForm />
         <ul>
             {skateparks.map(skatepark =>(
                 <li key={skatepark.id}>
@@ -35,7 +35,7 @@ const SkateparksList = ({ skateparks, deleteSkatepark }) => {
 };
 
 const mapStateToProps = state => {
-    return { minimarts: state.minimarts }
+    return { skateparks: state.skateparks }
     // connecting to Redux state, and then setting up a key-value pair. The key can be called
     // in our jsx
 }

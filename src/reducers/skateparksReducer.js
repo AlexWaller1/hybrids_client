@@ -14,7 +14,7 @@ export const skateparksReducer = (state = [], action) => {
             return [...state, action.payload]
             // ADD_SKATEPARK returns the previous state plus the new payload object.
         case 'REMOVE_SKATEPARK':
-            return state.filter(skatepark => MinimartsForm.id!==action.payload)
+            return state.filter(skatepark => skatepark.id!==action.payload)
             // REMOVE_SKATEPARK returns the objects that do not have the id of the
             // deleted payload
             default:

@@ -8,6 +8,7 @@ import HybridsContainer from './HybridsContainer'
 import NavLinks from './NavLinks';
 import RobotsContainer from './RobotsContainer';
 import MinimartsContainer from './MinimartsContainer';
+import SkateparksContainer from './SkateparksContainer';
 
 const App = () => {
     return (
@@ -17,6 +18,7 @@ const App = () => {
           <HybridsContainer />
           <RobotsContainer />
           <MinimartsContainer />
+          <SkateparksContainer />
           <Router />
         </div>
     );
