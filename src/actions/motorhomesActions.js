@@ -33,13 +33,20 @@ export const addMotorhome = motorhome => {
 }
 
 export const removeMotorhome = id => {
+    // id will need to be interpolated into the fetch route, so the function will need
+    // and id parameter
     return dispatch  => {
         fetch(`http://localhost:3000/motorhomes/${id}`, {
             method: 'DELETE',
+            // since this is not a get request, we will need specify what type of action this will be
+            // since this is a delete request, we do not need to worry about stringifying anything
             headers: { 'Content-Type': 'application/json'}
+            // setting protocols
         })
         .then(resp => resp.json())
+        // json object coverted to javascript object
         .then(() => dispatch({ type: 'REMOVE_MOTORHOME', payload: id }))
+        
     }
 }
 
