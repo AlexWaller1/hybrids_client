@@ -8,3 +8,16 @@ export const fetchCities = () => {
         .then(cities => dispatch({type:'FETCH_CITIES', payload: cities}))
     }
 }
+
+export const addCity = city => {
+    return (dispatch) => {
+        fetch('http://localhost:3000/cities',{
+            method: 'POST',
+            body: JSON.stringify(city),
+            // javascript object needs to be turned to JSON object for api
+            headers: { 'Content-Type': 'application/json' }
+        })
+        .then(resp => resp.json)
+        .then(city => dispatch({type:'ADD_CITY', payload: city }))
+    }
+}
