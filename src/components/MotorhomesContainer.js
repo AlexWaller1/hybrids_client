@@ -11,7 +11,7 @@ import { fetchMotorhomes } from '../actions/motorhomesActions'
 class MotorhomesContainer extends Component {
 
     componentDidMount(){
-        this.props.fetchMotorhomes
+        this.props.fetchMotorhomes()
         // when components mounts, the fetchMotorhomes will be called and will retrieve the motorhome
         // objects for the components to use
     }

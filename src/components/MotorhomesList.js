@@ -7,7 +7,7 @@ import { connect } from 'react-redux'
 import { removeMotorhome } from '../actions/motorhomesActions';
 import MotorhomesForm from './MotorhomesForm';
 
-export const MotorhomesList = ({ motorhomes, deleteMotorhome }) => {
+ const MotorhomesList = ({ motorhomes, deleteMotorhome }) => {
 
     
 
@@ -25,18 +25,18 @@ export const MotorhomesList = ({ motorhomes, deleteMotorhome }) => {
                         <h5> {motorhome.description} </h5>
                         <img src={motorhome.image} alt='Motorhome Image'  />
                         
-                        <button onClick={e =>{
+                        <button onClick={e => {
                             deleteMotorhome(motorhome.id)
                         }}>
-                            Scrub Motorhome From DataBase
+                            Delete
                         </button>
                     </li>
                 ))}
             </ul>
 
         </div>
-     )
-    }
+     );
+    };
 
    const mapStateToProps = state => {
       return  { motorhomes: state.motorhomes }
@@ -49,4 +49,4 @@ export const MotorhomesList = ({ motorhomes, deleteMotorhome }) => {
     }
 
 
-export default connect({ mapStateToProps, mapDispatchToProps })(MotorhomesList)
+export default connect(mapStateToProps, mapDispatchToProps)(MotorhomesList);

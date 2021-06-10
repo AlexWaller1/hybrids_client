@@ -10,6 +10,7 @@ import RobotsContainer from './RobotsContainer';
 import MinimartsContainer from './MinimartsContainer';
 import SkateparksContainer from './SkateparksContainer';
 import CitiesContainer from './CitiesContainer';
+import MotorhomesContainer from './MotorhomesContainer';
 
 const App = () => {
     return (
@@ -21,6 +22,7 @@ const App = () => {
           <MinimartsContainer />
           <SkateparksContainer />
           <CitiesContainer />
+          <MotorhomesContainer />
           <Router />
         </div>
     );

@@ -39,6 +39,7 @@ render(){
             <br/>
             <label>Model:</label>
             <input type='text' value={this.state.model} onchange={this.handleChange} name="model" />
+            <br/>
             <label>Year:</label>
             <input type='text' value={this.state.year} onChange={this.handleChange} name="year" />
             <br/>

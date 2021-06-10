@@ -30,6 +30,9 @@ const NavLinks = () => {
             <li>
                 <Link to="/cities">Cities</Link>
             </li>
+            <li>
+                <Link to="/motorhomes">Motorhomes</Link>
+            </li>
 
         </ul>
     )
