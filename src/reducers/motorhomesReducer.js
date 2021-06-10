@@ -6,7 +6,8 @@
 
 // as always, this reducer will need to go through the rootReducer
 
-export const motorhomesReducer = ({ state = [], action }) => {
+export const motorhomesReducer = ( state = [], action ) => {
+// state and action parameters do not go in curly braces
 // reducer functions will always need 
     switch(action.type) {
 

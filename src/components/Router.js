@@ -8,6 +8,7 @@ import SingleHybrid from './SingleHybrid'
 import MinimartsList from './MinimartsList'
 import SkateparksList from './SkateparksList'
 import CitiesList from './CitiesList'
+import MotorhomesList from './MotorhomesList'
 import About from '../components/About'
 
 
@@ -22,6 +23,7 @@ const Router = () => {
             <Route exact path='/minimarts' component={MinimartsList} />
             <Route exact path='/skateparks' component={SkateparksList} />
             <Route exact path='/cities' component={CitiesList} />
+            <Route exact path='/motorhomes' component={MotorhomesList} />
            
         </Switch>
     );

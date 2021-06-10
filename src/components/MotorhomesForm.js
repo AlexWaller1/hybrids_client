@@ -25,7 +25,7 @@ handleChange = e => {
 // will allow users to type in text fields
 
 handleSubmit = e => {
-    e.preventDefault
+    e.preventDefault()
     // will keep page from refreshing when form is submitted
     this.props.addMotorhome(this.state)
     // when submitted, component will call the addMotorhome function with current React State
