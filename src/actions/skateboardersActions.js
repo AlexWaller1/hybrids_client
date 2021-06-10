@@ -23,3 +23,15 @@ export const addSkateboarder = skateboarder => {
         .then(skateboarder => dispatch({ type: 'ADD_SKATEBOARDER', payload: skateboarder }))
     }
 }
+
+export const removeSkateboarder = id => {
+
+    return (dispatch) => {
+        fetch(`http://localhost:3000/skateboarders/${id}`, {
+            method: 'DELETE',
+            headers: { 'Content-Type': 'application/json' }
+        })
+        .then(resp => resp.json())
+        .then(() => dispatch({ type: 'REMOVE_SKATEBOARDER', payload: id}))
+    }
+}
