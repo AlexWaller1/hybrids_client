@@ -10,7 +10,7 @@ export const SingleHybrid = ({ match }) => {
     // we can read that value from match.params
 
     const hybrid = useSelector(state => 
-        state.hybrids.find(hybrid => hybrid.id === hybridId)
+        state.hybrids.find(hybrid => hybrid.id + '' === hybridId)
         )
     // Once we have that hybridId value, we can use it inside a selector function to find
     // the right hybrid object from the Redux store. We know that state.hybrids should be an

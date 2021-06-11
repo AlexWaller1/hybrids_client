@@ -3,7 +3,7 @@
 // the addSkateboarder function from the actions folder
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { addSkateboarder} from '../actions/skateboardersActions'
+import { addSkateboarder } from '../actions/skateboardersActions'
 
 class SkateboardersForm extends Component {
 

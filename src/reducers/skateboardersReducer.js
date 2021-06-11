@@ -8,7 +8,7 @@ export const skateboardersReducer = ( state = [], action ) => {
     switch(action.type) {
         // will skip other actions until a match is found
         
-        case 'FETCH_SKATEBOARDS':
+        case 'FETCH_SKATEBOARDERS':
           return action.payload
           // will return all skateboarders currently in the database
 
@@ -16,7 +16,7 @@ export const skateboardersReducer = ( state = [], action ) => {
             return [...state, action.payload]
             // will return the previous state, plus the newest posted skateboarder
 
-        case 'REMOVE_SKATEBOARD':
+        case 'REMOVE_SKATEBOARDER':
             return state.filter(skateboard => skateboard.id!==action.payload)
             // will return all skateboarders except the one that just got deleted
 

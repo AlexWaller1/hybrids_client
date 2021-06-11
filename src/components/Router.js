@@ -19,7 +19,7 @@ const Router = () => {
             <Route exact path='/' component={Home} />
             <Route exact path='/about' component={About} />
             <Route exact path='/hybrids' component={HybridsList} />
-            <Route exact path='/hybrid/:hybridId' component={SingleHybrid} />
+            <Route exact path='/hybrids/:hybridId' component={SingleHybrid} />
             <Route exact path='/robots' component={RobotsList} />
             <Route exact path='/minimarts' component={MinimartsList} />
             <Route exact path='/skateparks' component={SkateparksList} />

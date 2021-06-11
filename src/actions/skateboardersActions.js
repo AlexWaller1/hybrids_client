@@ -13,7 +13,7 @@ export const fetchSkateboarders = () => {
 
 export const addSkateboarder = skateboarder => {
 
-    return (dispatch) => {
+    return dispatch => {
         fetch('http://localhost:3000/skateboarders', {
             method: 'POST',
             body: JSON.stringify(skateboarder),
@@ -26,12 +26,12 @@ export const addSkateboarder = skateboarder => {
 
 export const removeSkateboarder = id => {
 
-    return (dispatch) => {
+    return dispatch => {
         fetch(`http://localhost:3000/skateboarders/${id}`, {
             method: 'DELETE',
             headers: { 'Content-Type': 'application/json' }
         })
-        .then(resp => resp.json())
+        // don't need to convert to JSON here
         .then(() => dispatch({ type: 'REMOVE_SKATEBOARDER', payload: id}))
     }
 }

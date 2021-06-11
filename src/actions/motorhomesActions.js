@@ -43,8 +43,8 @@ export const removeMotorhome = id => {
             headers: { 'Content-Type': 'application/json'}
             // setting protocols
         })
-        .then(resp => resp.json())
-        // json object coverted to javascript object
+        
+        // do not need to covert object to JSON
         .then(() => dispatch({ type: 'REMOVE_MOTORHOME', payload: id }))
         
     }

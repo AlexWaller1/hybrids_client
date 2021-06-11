@@ -1,5 +1,6 @@
 import React  from 'react';
 import { connect } from 'react-redux'
+import { Link } from 'react-router-dom';
 import { removeHybrid } from '../actions/hybridsActions';
 import HybridsForm from './HybridsForm';
 
@@ -17,7 +18,7 @@ const HybridsList = ({ hybrids, deleteHybrid }) => {
 
            {hybrids.map(hybrid => (
             <li key={hybrid.id}>
-                <h2>  {hybrid.name} </h2>
+                <h2>  <Link to={`/hybrids/${hybrid.id}`}>{hybrid.name}</Link> </h2>
                 <h3> {hybrid.species} </h3>
                 <h4>  {hybrid.origin} </h4>
                 <h5>  {hybrid.personality} </h5>
