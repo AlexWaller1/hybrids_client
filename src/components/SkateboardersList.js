@@ -6,13 +6,13 @@ import { connect } from 'react-redux'
 import { removeSkateboarder } from '../actions/skateboardersActions'
 import SkateboardersForm from './SkateboardersForm'
 
-const SkateparksList = () => {
+const SkateboardersList = ({ skateboarders, deleteSkateboarder }) => {
 
     return(
         <div>
             <SkateboardersForm />
             <ul>
-                {skateboarders.map(skateboarder => {
+                {skateboarders.map(skateboarder => (
                     <li key={skateboarder.id}>
                         <h2>{skateboarder.name}</h2>
                         <h3>{skateboarder.hometown}</h3>
@@ -25,19 +25,19 @@ const SkateparksList = () => {
                             Scrub Skateboarder
                         </button>
                     </li>
-                })}
+                ))}
 
             </ul>
         </div>
     )
 }
-    mapStateToProps = state => {
-        return { state: state.skateboarders }
+    const mapStateToProps = state => {
+        return { skateboarders: state.skateboarders }
     }
 
-    mapDispatchToProps = dispatch => {
+   const mapDispatchToProps = dispatch => {
         return { 
-            deleteSkateboarder: () => {dispatch(removeSkateboarder(id))}
+            deleteSkateboarder: (id) => {dispatch(removeSkateboarder(id))}
         }
     }
 

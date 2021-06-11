@@ -6,6 +6,7 @@ import { minimartsReducer } from './minimartsReducer'
 import { skateparksReducer } from './skateparksReducer'
 import { citiesReducer } from './citiesReducer'
 import { motorhomesReducer } from './motorhomesReducer'
+import { skateboardersReducer } from './skateboardersReducer'
 
 export const rootReducer = combineReducers({
     // all reducers must be passed through the route reducer
@@ -14,7 +15,8 @@ export const rootReducer = combineReducers({
     minimarts: minimartsReducer,
     skateparks: skateparksReducer,
     cities: citiesReducer,
-    motorhomes: motorhomesReducer
+    motorhomes: motorhomesReducer,
+    skateboarders: skateboardersReducer
 })
 
 // State is immutable, this means you cannot modify it

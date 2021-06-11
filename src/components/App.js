@@ -11,6 +11,7 @@ import MinimartsContainer from './MinimartsContainer';
 import SkateparksContainer from './SkateparksContainer';
 import CitiesContainer from './CitiesContainer';
 import MotorhomesContainer from './MotorhomesContainer';
+import SkateboardersContainer from './SkateboardersContainer';
 
 const App = () => {
     return (
@@ -23,6 +24,7 @@ const App = () => {
           <SkateparksContainer />
           <CitiesContainer />
           <MotorhomesContainer />
+          <SkateboardersContainer />
           <Router />
         </div>
     );
