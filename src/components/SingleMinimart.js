@@ -40,8 +40,33 @@ export const SingleMinimart = ({ match }) => {
 
     return (
         <section>
-            
+            <article classname="minimart">
+                <h1>{ minimart.name }</h1>
+                <h2>{ minimart.address }</h2>
+                <h2>{ minimart.state }</h2>
+                <h3>{ minimart.sodamachine }</h3>
+                <img src={ minimart.image } alt="Minimart Image" />
+
+            </article>
         </section>
     )
 
 }
+
+/* 
+
+Assuming we do have the right minimart object in the store, useSelector will return that, and we can
+use it to render the name and content of the minimart in the page.
+
+You might notice that this looks fairly similar to the logic we have in the body of our MinimartsList.js
+component, where we loop over the whole minimarts array to show excerpts in the main feed. We could try to
+extract a Minimart component that could be used in both places, but there are already some differences in
+how we're showing minimart and the whole minimart.
+
+It's usually better to keep writing separately for a while even if there's some duplication, and then
+we can decide later if the different sections of code are similar enough that we can really extract a 
+reusable component.
+
+*/
+
+export default SingleMinimart
