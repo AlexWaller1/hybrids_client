@@ -6,6 +6,7 @@ import HybridsList from './HybridsList'
 import RobotsList from './RobotsList'
 import SingleHybrid from './SingleHybrid'
 import SingleRobot from './SingleRobot'
+import SingleMinimart from './SingleMinimart'
 import MinimartsList from './MinimartsList'
 import SkateparksList from './SkateparksList'
 import CitiesList from './CitiesList'
@@ -24,6 +25,7 @@ const Router = () => {
             <Route exact path='/robots' component={RobotsList} />
             <Route exact path='/robots/:robotId' component={SingleRobot} />
             <Route exact path='/minimarts' component={MinimartsList} />
+            <Route exact path='/minimarts/:minimartId' component={SingleMinimart} />
             <Route exact path='/skateparks' component={SkateparksList} />
             <Route exact path='/cities' component={CitiesList} />
             <Route exact path='/motorhomes' component={MotorhomesList} />
