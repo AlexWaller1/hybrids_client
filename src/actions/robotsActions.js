@@ -30,7 +30,7 @@ export const removeRobot = id => {
 
         // dispatch({ type: 'REMOVE_ROBOT', payload: id })
 
-        fetch(`http:localhost:3000/robots/${id}`, {
+        fetch(`http://localhost:3000/robots/${id}`, {
             method: 'DELETE',
             //body: JSON.stringify({id})
             headers: { 'Content-Type': 'application/json' }

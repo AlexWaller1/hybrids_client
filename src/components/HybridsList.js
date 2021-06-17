@@ -24,7 +24,7 @@ const HybridsList = ({ hybrids, deleteHybrid }) => {
                 <h5>  {hybrid.personality} </h5>
                 <img src={hybrid.image} alt='Hybrid Image'/> 
                 
-                <button onClick={e => {
+                <button onClick={() => {
                     deleteHybrid(hybrid.id)
                 }}>delete</button>
               </li>
