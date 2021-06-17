@@ -51,4 +51,19 @@ export const SingleRobot = ({ match }) => {
 
 }
 
+/* 
+
+Assuming we do have the right robot object in the store, useSelector will return that, and we can 
+use it to render the name and content of the robot in the page.
+
+You might notice that this looks fairly similar to the logic we have in the body of our RobotsList.js
+component, where we loop over the whole hybrids array to show excerpts in the main feed. We could try to 
+extract a Robot component that could be used in both places, but there are already some differences in
+how we're showing a robot excerpt and the whole robot.
+It's usually better to keep writing things separately for a while even if there's some dupication,
+and then we can decide later if the different sections of code are similar enough that we can really
+extract a reusable component.
+
+*/
+
 export default SingleRobot
