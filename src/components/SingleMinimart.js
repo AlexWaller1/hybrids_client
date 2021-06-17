@@ -4,7 +4,11 @@ import { useSelector } from 'react-redux'
 // we use useSelector from react-redux to find specific instance of minimart class
 
 export const SingleMinimart = ({ match }) => {
+    // match contains url information
     const { minimartId } = match.params
+    // const { minimartId } is equal to the param of the route
+    // so if its localhost:3000/minimarts/:minimartId
+    // then match.params = :minimartId part of route
 
 
 
@@ -15,6 +19,9 @@ export const SingleMinimart = ({ match }) => {
 
     const minimart = useSelector (state =>
         state.minimarts.find(minimart => minimart.id + '' === minimartId)
+        // we connect redux store through useSelector
+        // then iterate through each element in minimarts array to find
+        // a minimart object with the same id and as the const minimartId
         )
     // Once we have that minimartId, we can use it inside a selector function to find
     // the right minimart object from the Redux store. We know that state.minimarts should be an
