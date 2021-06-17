@@ -3,6 +3,7 @@
 // that way the form and the list can be called on the same page
 import React from 'react';
 import { connect } from 'react-redux'
+import { Link } from 'react-router-dom';
 import { removeMinimart } from '../actions/minimartsActions';
 import MinimartForm from './MinimartsForm';
 
@@ -14,7 +15,7 @@ const MinimartsList = ({ minimarts, deleteMinimart }) => {
             <ul>
             {minimarts.map(minimart => (
                 <li key={minimart.id}>
-                     <h2> {minimart.name} </h2>
+                     <h2> <Link to={`/minimarts/${minimart.id}`}> {minimart.name} </Link> </h2>
                      <h2> {minimart.state} </h2>
                      <h3> {minimart.address} </h3>
                      <h4> {minimart.sodamachine} </h4>
