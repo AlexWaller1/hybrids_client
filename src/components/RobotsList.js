@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux'
+import { Link } from 'react-router-dom';
 import { removeRobot } from '../actions/robotsActions';
 import RobotsForm from './RobotsForm';
 
@@ -10,7 +11,7 @@ const RobotsList = ({ robots, deleteRobot }) => {
             <ul>
           {robots.map(robot => (
               <li key={robot.id}>
-                  <h2> {robot.name} </h2>
+                  <h2> <Link to={`/robots/${robot.id}`}> {robot.name} </Link> </h2>
                   <h3> {robot.model} </h3>
                   <h4> {robot.manufacturer} </h4>
                   <h5> {robot.purpose} </h5>
