@@ -9,6 +9,7 @@ import SingleRobot from './SingleRobot'
 import SingleMinimart from './SingleMinimart'
 import SingleSkatepark from './SingleSkatepark'
 import SingleMotorhome from './SingleMotorhome'
+import SingleSkateboarder from './SingleSkateboarder'
 import MinimartsList from './MinimartsList'
 import SkateparksList from './SkateparksList'
 import CitiesList from './CitiesList'
@@ -34,6 +35,7 @@ const Router = () => {
             <Route exact path='/motorhomes' component={MotorhomesList} />
             <Route exact path='/motorhomes/:motorhomeId' component={SingleMotorhome} />
             <Route exact path='/skateboarders' component={SkateboardersList} />
+            <Route exact path='/skateboarders/:skateboarderId' component={SingleSkateboarder} />
            
         </Switch>
     );

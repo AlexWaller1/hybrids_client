@@ -31,3 +31,5 @@ export const SingleSkateboarder = ({ match }) => {
         )
         
 }
+
+export default SingleSkateboarder
