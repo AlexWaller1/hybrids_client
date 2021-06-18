@@ -3,6 +3,7 @@
 // that way the form and the list can be called on the same page
 import React from 'react';
 import { connect } from 'react-redux'
+import { Link } from 'react-router-dom'
 import { removeSkatepark } from '../actions/skateparksActions';
 import SkateparksForm from './SkateparksForm';
 
@@ -14,7 +15,7 @@ const SkateparksList = ({ skateparks, deleteSkatepark }) => {
         <ul>
             {skateparks.map(skatepark =>(
                 <li key={skatepark.id}>
-                    <h2> {skatepark.name} </h2>
+                    <h2> <Link to={`/skateparks/${skatepark.id}`}>{skatepark.name}</Link> </h2>
                     <h3> {skatepark.location} </h3>
                     <h4> {skatepark.features} </h4>
                     <img src={skatepark.image} alt='Skatepark Image' />
