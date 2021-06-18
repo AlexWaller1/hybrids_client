@@ -4,6 +4,7 @@
 
 import React from 'react'
 import { connect } from 'react-redux'
+import { Link } from 'react-router-dom'
 import { removeMotorhome } from '../actions/motorhomesActions';
 import MotorhomesForm from './MotorhomesForm';
 
@@ -17,7 +18,7 @@ import MotorhomesForm from './MotorhomesForm';
             <ul>
                 {motorhomes.map(motorhome => (
                     <li key={motorhome.id}>
-                        <h2> {motorhome.name} </h2>
+                        <h2> <Link to={`/motorhomes/${motorhome.id}`}>{motorhome.name}</Link> </h2>
                         <h3> {motorhome.model} </h3>
                         <h3> {motorhome.year} </h3>
                         <h4> {motorhome.mileage} </h4>
@@ -39,10 +40,14 @@ import MotorhomesForm from './MotorhomesForm';
     };
 
    const mapStateToProps = state => {
+       // since it is specific state we are requesting the state needs to be passed in as 
+       // a parameter
       return  { motorhomes: state.motorhomes }
     }
 
     const mapDispatchToProps = dispatch => {
+        // since it is a specific dispatch we are requesting the dispatch needs to be passed
+        // in as a parameter
         return {
             deleteMotorhome: (id) => {dispatch(removeMotorhome(id))}
         }
